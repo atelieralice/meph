@@ -1,13 +1,11 @@
-public class Character {
-    public string charName;
+using System;
 
-    public enum WEAPON {
+public abstract class Character {
+    public enum STAR {
         NONE = -1,
-        SWORD,
-        CLAYMORE,
-        POLEARM,
-        BOW,
-        MAGIC
+        FOUR = 4,
+        FIVE = 5,
+        SIX = 6
     }
 
     public enum ESSENCE {
@@ -22,26 +20,29 @@ public class Character {
         DARKNESS
     }
 
-    public enum STAR {
+    public enum WEAPON {
         NONE = -1,
-        FOUR = 4,
-        FIVE = 5,
-        SIX = 6
+        SWORD,
+        CLAYMORE,
+        POLEARM,
+        BOW,
+        MAGIC
     }
 
-    public int maxLP;
-    public int maxEP;
-    public int maxMP;
-    public int maxUP;
-    public int potion;
+    public string charName;
+    public STAR star;
+    public ESSENCE essenceType;
+    public WEAPON weaponType;
 
-    bool isAffectedByToughness;
-    bool isAffectedByHealing;
-    bool isAffectedByRecharge;
-    bool isAffectedByGrowth;
-    bool isAffectedByStorm;
-    bool isAffectedByBurning;
-    bool isAffectedByFreeze;
-    bool isImmune;
+    public int maxLP, maxEP, maxMP, maxUP, potionAmount;
 
+    // public bool isAffectedByToughness;
+    // public bool isAffectedByHealing;
+    // public bool isAffectedByRecharge;
+    // public bool isAffectedByGrowth;
+    // public bool isAffectedByStorm;
+    // public bool isAffectedByBurning;
+    // public bool isAffectedByFreeze;
+    // public bool isImmune;
 }
+
