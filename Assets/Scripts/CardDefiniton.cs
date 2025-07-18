@@ -4,7 +4,7 @@ public abstract class Card {
 }
 
 public class WeaponCard : Card {
-    public Character.WEAPON WeaponType;
+    public Character.WEAPON_TYPE WeaponType;
     public int AttackPower;
 }
 
