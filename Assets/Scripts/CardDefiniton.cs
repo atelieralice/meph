@@ -1,22 +1,29 @@
-public abstract class Card {
-    public string Name;
-    public string Description;
-}
+using System;
 
-public class WeaponCard : Card {
-    public Character.WEAPON_TYPE WeaponType;
-    public int AttackPower;
-}
+// There are 52980 ways to impelemnt cards, why does this file exist?
+// I don't know, maybe what written here will be useful in the future
+namespace meph {
 
-public class SkillCard : Card {
-    public enum Type { Q, W, E, U }
-}
+    public abstract class Card {
+        public string Name;
+        public string Description;
+    }
 
-public class PotionCard : Card {
-    public int Amount;
-}
+    public class WeaponCard : Card {
+        public Character.WEAPON_TYPE WeaponType;
+        public int AttackPower;
+    }
 
-public class CharmCard : Card {
-    public enum Type { Helmet, Armor, Gloves, Boots, Glow }
-    public Type CharmType;
+    public class SkillCard : Card {
+        public enum Type { Q, W, E, U }
+    }
+
+    public class PotionCard : Card {
+        public int Amount;
+    }
+
+    public class CharmCard : Card {
+        public enum Type { Helmet, Armor, Gloves, Boots, Glow }
+        public Type CharmType;
+    }
 }
