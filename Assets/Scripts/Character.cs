@@ -35,15 +35,15 @@ namespace meph {
 
         [Flags]
         public enum STATUS_EFFECT {
-            None = 0,
-            Toughness = 1,
-            Healing = 2,
-            Recharge = 4,
-            Growth = 8,
-            Storm = 16,
-            Burning = 32,
-            Freeze = 64,
-            Immune = 128
+            NONE = 0,
+            TOUGHNESS = 1,
+            HEALING = 2,
+            RECHARGE = 4,
+            GROWTH = 8,
+            STORM = 16,
+            BURNING = 32,
+            FREEZE = 64,
+            IMMUNE = 128
         }
 
         public string CharName { get; internal set; }
@@ -68,9 +68,9 @@ namespace meph {
         // This variable represents Factors (and other status effects) as a bitfield    
         public STATUS_EFFECT StatusEffects { get; internal set; }
 
-        // |   : Bitwise OR (set flag)              -> statusEffects |= STATUS_EFFECT.Burning;
-        // &= ~: Bitwise AND with NOT (remove flag) -> statusEffects &= ~STATUS_EFFECT.Burning;
-        // &   : Bitwise AND (check flag)           -> (statusEffects & STATUS_EFFECT.Burning) != 0
+        // |   : Bitwise OR (set flag)              -> statusEffects |= STATUS_EFFECT.BURNING;
+        // &= ~: Bitwise AND with NOT (remove flag) -> statusEffects &= ~STATUS_EFFECT.BURNING;
+        // &   : Bitwise AND (check flag)           -> (statusEffects & STATUS_EFFECT.BURNING) != 0
 
     }
 

@@ -17,7 +17,7 @@ namespace meph {
         public int maxUP;
         public int maxPotion;
 
-        public List<CardData> cards;
+        public List<CardData> cards; // = new List<CardData>();
         public List<CharmData> charms;
         public SetBonusData setBonus;
     }
