@@ -66,7 +66,7 @@ namespace meph {
         // Emplty until it is decided
 
         // This variable represents Factors (and other status effects) as a bitfield    
-        public STATUS_EFFECT statusEffects { get; internal set; }
+        public STATUS_EFFECT StatusEffects { get; internal set; }
 
         // |   : Bitwise OR (set flag)              -> statusEffects |= STATUS_EFFECT.Burning;
         // &= ~: Bitwise AND with NOT (remove flag) -> statusEffects &= ~STATUS_EFFECT.Burning;
