@@ -14,56 +14,66 @@
             "name": "Rok",
             "type": "C",
             "description": "When LP is below 25% of Max LP, all attacks of Rok deals Fire Damage and gains Burning. BT is increased by 1 Turn.",
-            "requirements": "N/A"
+            "requirements": {}
         },
         {
             "id": "rok_bw",
             "name": "Aura of Magic",
             "type": "BW",
             "description": "Deals 65 Normal Damage to opponent. If equipped by a Magic wielder, regenerates 20 MP per use.",
-            "requirements": "N/A"
+            "requirements": {}
         },
         {
             "id": "rok_sw",
             "name": "Talisman of Calamity",
             "type": "SW",
             "description": "Deals 80 Normal Damage to opponent. If equipped by a Fire ruler, your character gains a shield which blocks only Essence Damages, DP:80 and DT:2 Turns.",
-            "requirements": "N/A"
+            "requirements": {}
         },
         {
             "id": "rok_e",
             "name": "Sparking Punch",
             "type": "E",
             "description": "Deals 60 Normal Damage to opponent. Increases BD by 2% for 6 Turns. Duration of this effect cannot be stacked.",
-            "requirements": "40 MP"
+            "requirements": {
+                "MP": 40
+            }
         },
         {
             "id": "rok_w",
             "name": "Wounding Ember",
             "type": "W",
             "description": "Deals 100 Fire Damage to opponent. Inflicts Burning.",
-            "requirements": "90 MP and 50 EP"
+            "requirements": {
+                "MP": 90,
+                "EP": 50
+            }
         },
         {
             "id": "rok_q",
             "name": "Altering Pyre",
             "type": "Q",
             "description": "Has 3 charges. Can be used after being activated. Gains different features according to Turns waited:\n1+ Turns: Deals 300 Fire Damage to opponent. Inflicts Burning.\n3+ Turns: Deals 5% Fire Damage to opponent. Increases BD by 4% for this instance and inflicts Burning.\n5+ Turns: Deals 10% Fire Damage to opponent. Increases BD by 4% for this instance and inflicts Burning.",
-            "requirements": "120 MP and 100 EP"
+            "requirements": {
+                "MP": 120,
+                "EP": 100
+            }
         },
         {
             "id": "rok_p",
             "name": "Fierceful Recover",
             "type": "P",
             "description": "Your character recovers 40 MP at beginning of every Turn for 4 Turns.",
-            "requirements": "N/A"
+            "requirements": {}
         },
         {
             "id": "rok_u",
             "name": "Blazing Dash",
             "type": "U",
             "description": "Your character becomes Immune. Multiply BD by 2. (This operation is always calculated as the last step of math.) Lasts for 5 separate attacks executed by you.",
-            "requirements": "1 UP"
+            "requirements": {
+                "UP": 1
+            }
         }
     ],
     "charms": [
