@@ -17,7 +17,7 @@ namespace meph {
         public int maxUP;
         public int maxPotion;
 
-        public List<CardData> cards; // = new List<CardData>();
+        public List<CardData> cards; // = new List<CardData>(); -> NOT NEEDED!
         public List<CharmData> charms;
         public SetBonusData setBonus;
     }
@@ -28,7 +28,7 @@ namespace meph {
         public string name;
         public string type;
         public string description;
-        public string requirements;
+        public Dictionary<string, int> requirements;
     }
 
     [Serializable]

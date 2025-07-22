@@ -81,4 +81,7 @@ namespace meph {
             return ( effects & effect ) != 0;
         }
     }
+    // Example:
+    // if (StatusEffects.Has(Character.STATUS_EFFECT.FREEZE)) {
+    // Console.WriteLine("Character is frozen");
 }
